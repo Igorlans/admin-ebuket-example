@@ -1,0 +1,45 @@
+.wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .leftSide {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .selectedDays {
+            
+        }
+    }
+    .rightSide {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        button {
+            border-color: #282D4B;
+            color: #282D4B;
+        }
+        .calendarBox {
+            width: 800px;
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            background-color: #fff;
+            box-shadow: #30303B;
+            border: 1px solid #D7D7E5;
+            border-radius: 6px;
+        }
+    }
+    .Button {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #30303B;
+        border-radius: 5px;
+        border: 1px solid #D7D7E5;
+    }
+}

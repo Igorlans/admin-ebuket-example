@@ -1,0 +1,185 @@
+.box {
+    position: fixed;
+    border: 1px solid #D7D7E5;
+    background-color: #fff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    justify-content: flex-start;
+    gap: 80px;
+    padding: 10px 20px;
+    overflow: hidden;
+    @media (max-width: 1300px) {
+        gap: 40px;
+    }
+    .orderInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       .wr {
+            p {
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #282D4B; 
+                margin-bottom: 10px;
+            }
+            .products {
+                .product {
+                    display: grid;
+                    grid-template-columns: 0.2fr 1.6fr 0.2fr;
+                    gap: 20px;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .image {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .info {
+                        .category {
+                            width: 100%;
+                            font-family: 'Inter';
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #282D4B;
+                            margin-bottom: 5px;
+                        }
+                        .productName {
+                            width: 100%;
+                            font-family: 'Inter';
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 140%;
+                            text-decoration-line: underline;
+                            color: #14141D;
+                        }
+                    }
+                    .price {
+                        white-space: nowrap;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #30303B;
+                    }
+            }
+        }
+        .orderPrice {
+            margin-bottom: 30px;
+            div {
+                display: flex;
+                justify-content: flex-start;
+                gap: 5px;
+                align-items: center;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #30303B;
+                margin-bottom: 10px;
+            }
+            p {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #30303B;
+                margin-bottom: 0px;
+            }
+        }
+        .orderStatusData {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-family: 'Inter';
+            margin-bottom: 60px;
+            .orderDate {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 140%;
+                color: #9C9CAA;
+            }
+            .orderStatus {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #282D4B;      
+            }
+        }
+       }
+       .statusButtons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            button:first-child {
+                padding: 12px 20px;
+              }
+            @media (max-width: 1400px) {
+                flex-wrap: wrap;
+                button {
+                    width: 100%;
+                    padding: 10px 15px!important;
+                }
+            }
+        }   
+    }
+    .contactInfo {
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282D4B;
+            margin-bottom: 10px;
+        }
+        .receiverData {
+
+        }
+        .deliveryData {
+
+        }
+    }
+    .quickOrder {
+        .phoneRow {
+            .title {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .custumerData, .receiverData, .deliveryData, .payData,.phoneRow {
+        margin-bottom: 10px;
+        .title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282D4B;
+            margin-bottom: 5px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #14141D;
+            }
+            
+        }
+    }
+}

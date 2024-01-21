@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    img {
+        user-select: none; 
+    }
+    .storeStatistic {
+        .main {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #282D4B;
+            margin-bottom: 15px;
+        }
+        .extra {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            .rate, .reviews {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                p {
+                    width: 100%;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 160%;
+                    display: flex;
+                    align-items: center;            
+                    color: #14141D;
+                }
+                color: #282D4B;
+            }
+        }
+    }
+}

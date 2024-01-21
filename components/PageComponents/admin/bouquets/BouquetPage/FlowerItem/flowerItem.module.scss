@@ -1,0 +1,11 @@
+.flowerItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    gap: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px #D7D7E5 solid;
+    align-items: center;
+    margin-bottom: 10px;
+}

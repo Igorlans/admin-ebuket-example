@@ -1,0 +1,49 @@
+.header {
+  grid-area: header;
+  background: $white;
+  padding: 8px 35px;
+  color: $primary-color;
+  box-shadow: $shadow-style;
+  position: relative;
+  .mobileHeader {
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    background-color: $white;
+    .info {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      opacity: 0.5;
+    }
+    .takeHelp {
+      position: absolute;
+      top: 80%;
+      width: 200px;
+      right: 10%;
+      z-index: 995;
+      background: #FFFFFF;
+      border: 1px solid #D7D7E5;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+      border-radius: 6px;
+      div {
+        display: flex;  
+        justify-content: flex-start;
+        gap: 10px;
+        align-items: center;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: #F9F9FF;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 15px;
+  }
+}

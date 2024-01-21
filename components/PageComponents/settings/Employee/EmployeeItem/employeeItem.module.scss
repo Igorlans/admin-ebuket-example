@@ -1,0 +1,26 @@
+.bouquetItem {
+  border-top: 1px solid $background-color;
+  border-bottom: 1px solid $background-color;
+  margin-bottom: 20px;
+}
+.name_buket {
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #14141D;
+  }
+  a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    text-decoration-line: underline;
+    color: #85B320;
+  }
+}
+.btnMoreInfo {
+  display: flex;
+  justify-content: flex-end;
+}

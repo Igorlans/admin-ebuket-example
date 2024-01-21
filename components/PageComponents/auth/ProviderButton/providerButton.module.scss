@@ -1,0 +1,35 @@
+.providerButton {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-radius: 3px;
+  gap: 20px;
+  padding: 10px 15px;
+  width: 100%;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.1s all linear;
+  &:hover {
+    background-color: #eeeaea;
+  }
+  &:active {
+    background-color: #c9c9c9;
+  }
+  .icon {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: span 2;
+    align-self: end;
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  span {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: span 2;
+  }
+}

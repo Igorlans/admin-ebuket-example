@@ -1,0 +1,18 @@
+.wrapper {
+    width: 100%;
+}
+.dataSets {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.dataSetCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.dataSetColorPreview {
+    width: 35px;
+    height: 3px;
+}

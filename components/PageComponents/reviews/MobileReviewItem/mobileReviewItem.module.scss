@@ -1,0 +1,60 @@
+.tableCell {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 0.7fr 1.8fr 0.2fr;
+    gap: 10px;
+    padding: 10px 0px;
+    align-items: flex-start;
+    border-top: 1px solid #D7D7E5;
+    border-bottom: 1px solid #D7D7E5;
+}
+.reviewInfo {
+    .reviewDate {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #14141D;
+    }
+    .reviewText {
+        width: 100%;
+        overflow: hidden;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        color: #14141D;
+    }
+    .reviewId {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        div {
+            width: 100%;
+        }
+        p {
+            text-decoration: underline;
+        }
+    }
+}
+.collapse {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    background-color: #f6f6fa;
+    border-bottom: 1px solid #D7D7E5;
+    div {
+        text-align: center;
+    }
+}

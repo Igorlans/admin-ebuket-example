@@ -1,0 +1,66 @@
+.box {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    gap: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        border: 1px solid #d9f2a4;
+        transition: 0.3s;
+    }
+    .leftSide {
+        .status {
+            width: 100px;
+            padding: 5px 15px;
+            gap: 10px;
+            width: 80px;
+            height: 29px;
+            text-align: center;
+            background-color: #DEFF94;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .num {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282D4B;
+            margin-bottom: 5px;
+        }
+        .dateOrdering {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #9C9CAA;
+        }
+    }
+    .rightSide {
+        .item {
+            margin-bottom: 10px;
+        }
+        .title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282D4B;
+        }
+        .info {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #14141D;
+
+        }
+    }
+}

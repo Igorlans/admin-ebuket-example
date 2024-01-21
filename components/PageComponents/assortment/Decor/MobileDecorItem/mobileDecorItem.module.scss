@@ -1,0 +1,29 @@
+.title {
+    color: #000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr 1fr 1fr;
+}
+.collapseTop {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+    gap: 10px;
+    align-items: center;
+}
+.collapseMiddle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    div {
+        margin-left: 0px;
+
+    }
+    .paramIcon {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: nowrap;
+    }
+}

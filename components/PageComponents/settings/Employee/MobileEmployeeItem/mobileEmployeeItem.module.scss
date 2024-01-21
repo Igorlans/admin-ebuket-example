@@ -1,0 +1,27 @@
+.box {
+    padding: 15px 0px;
+    border-bottom: 1px solid #D7D7E5;
+}
+.topRow {
+    color: #14141D;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}   
+.bottomRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    .ordersValue {
+        text-align: right;
+    }
+}

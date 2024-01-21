@@ -1,0 +1,59 @@
+.window {
+  height: 93vh;
+  padding: 30px 35px;
+  grid-area: window;
+  background: $background-color;
+  @media (max-width: 1124px) {
+    padding: 0;
+  }
+}
+.window_body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: $background-color;
+  box-shadow: $shadow-style;
+  border-radius: 10px;
+  overflow: hidden;
+  @media (max-width: 1124px) {
+    border-radius: 0;
+  }
+}
+.window_header {
+  padding: 20px 20px;
+  background: $primary-color;
+  color: $white;
+}
+.window_content {
+  overflow-y: scroll;
+  flex: 1;
+  padding: 25px;
+  background: #fff;
+  @media (max-width: 1124px) {
+    padding: 15px;
+  }
+}
+.window_title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  .title_icon {
+
+  }
+  .title_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    
+    @media (max-width: 991px) {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+  }
+}

@@ -1,0 +1,38 @@
+.sidebar {
+  grid-area: sidebar;
+  background: $primary-color;
+  color: $white;
+  box-shadow: $shadow-style;
+  * {
+    user-select: none;
+  }
+  .logo {
+    padding: 20px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.wrapper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 995;
+  background-color: azure;
+ 
+}
+.mobileSidebar {
+  grid-area: sidebar;
+  background-color: $primary-color;
+  color: $white;
+  box-shadow: $shadow-style;
+  height: 100%;
+  .top {
+    padding: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

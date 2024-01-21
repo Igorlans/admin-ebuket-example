@@ -1,0 +1,65 @@
+.box {
+    padding: 15px 0px;
+    border-bottom: 1px solid #D7D7E5;
+}
+.topRow {
+    color: #14141D;
+    display: grid;
+    grid-template-columns: 0.7fr 2.6fr 0.5fr 0.2fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+}   
+.middleRow {
+    display: grid;
+    grid-template-columns: 0.7fr 2.6fr 0.7fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    .createdAt {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #14141D;
+    }
+    a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        text-decoration-line: underline;
+        color: #85B320;
+    }
+}
+.bottomRow {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.8fr;
+    align-items: center;
+    gap: 10px;
+    .status_moderation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 120px;
+        height: 29px;
+        background: #FFE895;
+        border-radius: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #30303B;
+    }
+    .ordersValue {
+        text-align: right;
+    }
+}

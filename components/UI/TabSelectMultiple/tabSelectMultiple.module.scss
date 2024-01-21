@@ -1,0 +1,43 @@
+.tabSelect {
+    .label {
+        font-weight: 500;
+    }
+    .tabList {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 15px;
+        .tab {
+            display: flex;
+            gap: 10px;
+            white-space: nowrap;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 2px $background-color solid;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: 0.1s all linear;
+            .close {
+                color: $grey;
+                height: 18px;
+            }
+            &:hover {
+                background: $primary-color;
+                border: 2px $primary-color solid;
+                color: $white;
+            }
+        }
+        .tabActive {
+            background: $primary-color;
+            border: 2px $primary-color solid;
+            color: $white;
+        }
+    }
+    .error_text {
+        white-space: nowrap;
+        color: rgb(211, 47, 47);
+        font-size: 12px;
+    }
+}

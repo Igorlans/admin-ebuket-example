@@ -1,0 +1,96 @@
+.box {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    @media (max-width: 390px) {
+        gap: 10px;
+    }
+    &:hover {
+        border: 1px solid #d9f2a4;
+        transition: 0.3s;
+    }
+    .leftSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .status {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100px;
+            padding: 5px 15px;
+            gap: 10px;
+            width: 80px;
+            height: 29px;
+            text-align: center;
+            background-color: #DEFF94;
+            border-radius: 20px;
+            div {
+                margin: 0px auto;
+            }
+        }
+        .num {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282D4B;
+            margin-bottom: 5px;
+        }
+        .dateOrdering {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+            color: #9C9CAA;
+        }
+    }
+    .rightSide {
+        .topRow {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%; 
+            color: #14141D;
+        }
+        .middleRow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #14141D;
+            .price {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 5px;
+                padding: 5px;
+                background-color: #F9F9FF;
+                border-radius: 3px;
+                p {
+                    font-weight: 600;
+                }
+            }
+        }
+        .bottomRow {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #14141D;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+    }
+}

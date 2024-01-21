@@ -1,0 +1,32 @@
+.colorSelect {
+    position: relative;
+
+    .label {
+        font-weight: 500;
+    }
+    .colorList {
+        max-width: 300px;
+        margin-top: 10px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        .colorItem {
+            width: 50px;
+            height: 30px;
+            border: 2px $background-color solid;
+            border-radius: 6px;
+            transition: 0.1s all linear;
+        }
+        .colorItemActive {
+            border: 2px $primary-color-opacity10 solid;
+        }
+    }
+
+
+    .error_text {
+        white-space: nowrap;
+        bottom: -20px;
+        color: rgb(211, 47, 47);
+        font-size: 12px;
+    }
+}

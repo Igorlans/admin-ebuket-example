@@ -1,0 +1,31 @@
+.button {
+  display: block;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: $secondary-color;
+  color: $white;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.1s linear;
+  &:hover {
+    background: $secondary-color-dark;
+  }
+  &:active {
+    background: $secondary-color-light;
+  }
+}
+
+.outlined {
+  background: transparent;
+  color: $primary-color;
+  border: 2px solid $background-color;
+  &:hover {
+    background: $background-color;
+  }
+  &:active {
+    background: $grey;
+  }
+}

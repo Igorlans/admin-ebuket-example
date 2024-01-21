@@ -1,0 +1,169 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+}
+.shopInfo {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  .image {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    .title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #282D4B;
+      white-space: nowrap;
+    }
+    .info {
+      font-size: 14px;
+      display: flex;
+      gap: 15px;
+      position: relative;
+      .stars {
+        display: flex;
+        gap: 5px;
+      }
+      .bouqets {
+        display: flex;
+        gap: 5px;
+        .bouqets_text {
+          @media (max-width: 991px) {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 991px) {
+      color: #282D4B;
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 10px 20px;
+    border-bottom: 1px solid #D7D7E5;
+  }
+  .btnOpenCollapse {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.shopControl {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+  user-select: none;
+  .switchBox {
+    p {
+      white-space: nowrap;
+    }
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .info {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    svg {
+      opacity: 0.5;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        opacity: 1!important;
+        transition: 0.3s;
+      }
+    }
+    .bellBox {
+      position: relative;
+      .chip {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 16px;
+        height: 15px;
+        z-index: 995;
+        border-radius: 100%;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        background-color: #9DCA39;
+      }
+    }
+  }
+  .takeHelp {
+    position: absolute;
+    top: 120%;
+    width: 200px;
+    right: 10%;
+    z-index: 995;
+    background: #FFFFFF;
+    border: 1px solid #D7D7E5;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    div {
+      display: flex;  
+      justify-content: flex-start;
+      gap: 10px;
+      align-items: center;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        background-color: #F9F9FF;
+        transition: 0.3s;
+      }
+    }
+  }
+  .balance {
+    .balanceBtn {
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      background-color: #282D4B;
+      color: #F9F9FF;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+}}
+.balanceWindow {
+  max-width: 400px;
+  padding: 30px 20px;
+  position: absolute;
+  top: 120%;
+  right: 0px;
+  background-color: #fff;
+  z-index: 995;
+  border: 1px solid #D7D7E5;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+.collapse {
+  background-color: #F9F9FF;
+  padding: 15px 20px;
+}

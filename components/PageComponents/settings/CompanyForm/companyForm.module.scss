@@ -1,0 +1,90 @@
+.companyForm {
+  .modal_body {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  color: $primary-color;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 0.6fr 1.6fr 0.8fr;
+  gap: 50px;
+
+  @media (max-width: 1125px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .info {
+    .input {
+      margin-bottom: 20px;
+    }
+    .textarea {
+      margin-bottom: 20px;
+      textarea {
+        width: 100%;
+        min-height: 200px;
+      }
+    }
+  }
+  .contacts {
+    border: 2px $background-color solid;
+    border-radius: 10px;
+    padding: 15px;
+    .input {
+      margin-bottom: 25px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .subtitle {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .checkbox {
+      margin-top: 10px;
+    }
+  }
+  .shipping {
+    .shipping_header {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .shipping_title {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .shipping_item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      gap: 10px;
+      .shipping_icon {
+
+      }
+    }
+  }
+  .error_text {
+    white-space: nowrap;
+    color: rgb(211, 47, 47);
+    font-size: 12px;
+  }
+}
+
+.submit_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

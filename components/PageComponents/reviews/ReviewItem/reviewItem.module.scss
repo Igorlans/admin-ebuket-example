@@ -1,0 +1,38 @@
+
+.tableCell {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px!important;
+
+    .reviewInfo {
+        .reviewText {
+            margin-bottom: 5px;
+            width: 100%;
+            overflow: hidden;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            color: #14141D;
+        }
+        .reviewId {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            p {
+                text-decoration: underline;
+            }
+        }
+    }
+}

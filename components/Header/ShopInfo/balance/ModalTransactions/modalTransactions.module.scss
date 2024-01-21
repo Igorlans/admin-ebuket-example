@@ -1,0 +1,69 @@
+.MuiBackdrop-root {
+    background-color: rgba(40, 45, 75, 0.6);
+}
+.box {
+    width: 40%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 1.4px solid #D7D7E5;
+    border-radius: 14px;
+    box-shadow: 24;
+    padding: 30px;
+    font-family: 'Inter';
+    overflow: auto;
+    @media (max-width: 991px) {
+        width: 70%;
+    }
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+    @media (max-width: 450px) {
+        width: 95%;
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 160%;
+        margin-bottom: 20px;
+        svg {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+    .item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.5fr;
+        align-items: center;
+        padding: 5px 0px;
+        border-bottom: 1px solid #E9E9EF;
+        .date {
+            width: 100px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;     
+            color: #9C9CAA;
+        }
+        .value {
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 160%;
+            color: #30303B;
+        }
+        .name {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: right;
+            color: #30303B;
+        }
+    }
+}

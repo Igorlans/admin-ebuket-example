@@ -1,0 +1,171 @@
+.submit_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.short_input {
+  input {
+    max-width: 100px;
+  }
+}
+.tariff_tabs {
+  display: flex;
+  gap: 20px;
+  .tariff_tab {
+    display: flex;
+    border: 2px solid $background-color;
+    border-radius: 6px;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    .tariff_close {
+      width: 25px;
+      height: 25px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+}
+
+.tariff_form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .tariff_rate {
+    padding: 15px;
+    padding-bottom: 35px;
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid $background-color;
+    border-radius: 6px;
+    .tariff_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 20px;
+      .tariff_close {
+        cursor: pointer;
+        color: $grey;
+      }
+    }
+    .input_list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .tariff_input {
+      input {
+        width: 100%;
+      }
+    }
+    .tariff_input_short {
+      display: inline-flex;
+      align-items: center;
+      span {
+        padding: 0;
+      }
+      input {
+        width: 80px;
+      }
+    }
+
+  }
+}
+.input_short {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  span {
+    padding: 0;
+  }
+  input {
+    width: 80px;
+  }
+}
+.tariff_uah {
+  position: relative;
+  &:after {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: -10px;
+    content: 'грн';
+    height: 100%;
+    width: 100%;
+  }
+}
+.fullInput {
+  input {
+    width: 100%;
+  }
+}
+.pickup_form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .pickup_item {
+    border-radius: 6px;
+    border: 2px solid $background-color;
+    padding: 15px;
+  }
+  .pickup_subtitle {
+    font-size: 16px;
+  }
+  .pickup_description {
+    font-size: 12px;
+    max-width: 70%;
+    margin-bottom: 8px;
+    color: #9C9CAA;
+  }
+
+  .pickup_checkmap {
+    margin-top: -8px;
+    font-size: 14px;
+    color: #9C9CAA;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #3e4675;
+    }
+  }
+
+
+  .pickup_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+    .pickup_close {
+      cursor: pointer;
+      color: $grey;
+    }
+  }
+  .input_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.description_text {
+  font-size: 14px;
+}

@@ -1,0 +1,205 @@
+
+.orderInfo {
+    .orderDate {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 5px;
+        line-height: 140%;
+        color: #9C9CAA;
+    }
+    .status {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100px;
+        padding: 5px 15px;
+        gap: 10px;
+        width: 80px;
+        height: 29px;
+        text-align: center;
+        background-color: #DEFF94;
+        border-radius: 20px;
+        div {
+            margin: 0px auto;
+        }
+    }
+    .num {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #282D4B;
+        margin-bottom: 5px;
+    }
+    .dateOrdering {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: #9C9CAA;
+    }
+}
+.statusButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button:first-child {
+        padding: 12px 20px;
+      }
+    @media (max-width: 450px) {
+        flex-wrap: wrap;
+        button {
+            width: 100%;
+            padding: 10px 15px!important;
+        }
+    }
+}   
+.price {
+    margin-bottom: 20px;
+    .productsPrice {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #30303B;
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: right;
+        }
+    }
+    .deliveryPrice {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #30303B;
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: right;
+            color: #30303B;
+        }
+    }
+}
+.products {
+    .product {
+        display: grid;
+        grid-template-columns: 0.2fr 1.6fr 0.2fr;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+        .image {
+            width: 50px;
+            height: 50px;
+        }
+        .info {
+            .category {
+                width: 100%;
+                font-family: 'Inter';
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #282D4B;
+                margin-bottom: 5px;
+            }
+            .productName {
+                width: 100%;
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 140%;
+                text-decoration-line: underline;
+                color: #14141D;
+            }
+        }
+        .price {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #30303B;
+        }
+    }
+}
+
+.contactInfo {
+    padding: 10px 20px;
+    border: 1px solid #D7D7E5;
+    border-radius: 10px;
+    p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #282D4B;
+        margin-bottom: 10px;
+    }
+    .custumerData, .receiverData, .deliveryData, .payData {
+        margin-bottom: 10px;
+        .title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #282D4B;
+            margin-bottom: 5px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #14141D;
+            }
+            
+        }
+    }
+}
+.statusButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button:first-child {
+        padding: 12px 20px;
+      }
+    @media (max-width: 1400px) {
+        flex-wrap: wrap;
+        button {
+            width: 100%;
+            padding: 10px 15px!important;
+        }
+    }
+}   

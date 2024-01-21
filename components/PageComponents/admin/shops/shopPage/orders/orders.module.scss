@@ -1,0 +1,8 @@
+.orders {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}

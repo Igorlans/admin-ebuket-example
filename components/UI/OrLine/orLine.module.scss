@@ -1,0 +1,23 @@
+.orLine {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  color: #fff;
+  align-items: center;
+  &:before {
+    border-radius: 1px;
+    content: '';
+    background: #fff;
+    opacity: 0.6;
+    height: 1px;
+    flex: 1;
+  }
+  &:after {
+    content: '';
+    border-radius: 1px;
+    opacity: 0.6;
+    background: #fff;
+    height: 1px;
+    flex: 1;
+  }
+}

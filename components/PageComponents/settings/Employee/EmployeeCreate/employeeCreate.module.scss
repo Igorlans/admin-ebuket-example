@@ -1,0 +1,22 @@
+
+.employeesCreate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 40px;
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 30px;
+      .title {
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      @media (max-width: 1285px) {
+        gap: 40px;
+        grid-template-columns: 1fr;
+      }
+    }
+  
+}

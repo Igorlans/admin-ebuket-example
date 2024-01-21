@@ -1,0 +1,52 @@
+.addAddition {
+  h3 {
+    font-weight: 500;
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  margin-top: 40px;
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    //margin-bottom: 15px;
+  }
+  .header {
+    display: grid;
+    align-content: start;
+    grid-template-columns: 1fr 1fr;
+  }
+  .selectAdditonList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .additionItem {
+    text-align: center;
+    border: 2px $background-color solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    .image {
+      justify-self: start;
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      overflow: hidden;
+      img {
+
+      }
+    }
+    &_body {
+      flex: 1;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    }
+  }
+}

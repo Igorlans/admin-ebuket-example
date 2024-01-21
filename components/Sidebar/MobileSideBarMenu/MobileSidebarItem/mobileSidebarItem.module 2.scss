@@ -1,0 +1,36 @@
+.sidebar_item {
+  .sidebar_header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    width: 100%;
+    transition: background 0.1s linear;
+    .text {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 500;
+    }
+    &:hover {
+      background: $primary-color-opacity10;
+    }
+  }
+  .sidebar_items {
+    .li {
+      color: $background-color;
+      padding: 5px 0 5px 20%;
+      transition: background 0.1s linear;
+      a {
+        display: block;
+        width: 100%;
+        color: $background-color;
+        text-decoration: none;
+      }
+      &:hover {
+        background: $primary-color-opacity30;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.scheduleForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 400;
+  .scheduleItem {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr 2.5fr;
+    grid-template-areas: 
+    "label inputs checkbox";
+    gap: 10px;
+    align-items: center;
+    @media (max-width: 855px) {
+      grid-template-columns: 3fr;
+      grid-template-areas:
+      "label"
+      "inputs"
+      "checkbox";
+      gap: 15px;
+    }
+    .label {
+      grid-area: label;
+    }
+    .inputs {
+      grid-area: inputs;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .input {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .checkbox {
+      grid-area: checkbox;
+    }
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

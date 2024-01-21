@@ -1,0 +1,24 @@
+.modal {
+  color: $primary-color;
+  width: clamp(50%, 500px, 90%);
+  //height: min(50%, 1000px);
+  //max-height: 90vh;
+  //overflow: scroll;
+  margin: auto;
+  border-radius: 10px;
+  padding: 15px;
+  background: $white;
+  .header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px $background-color solid;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+}
